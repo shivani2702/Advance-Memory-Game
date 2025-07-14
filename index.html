@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced Memory Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Match the <span>Images</span></h1>
+    </header>
+
+    <!-- Game Stats -->
+    <div class="game-info">
+      <div class="stats">
+        <p>⏱ Time: <span id="timer">00:00</span></p>
+        <p>🎯 Moves: <span id="moves">0</span></p>
+      </div>
+
+      <!-- Difficulty Selector -->
+      <div class="difficulty-selector">
+        <label>Select Difficulty:</label>
+        <button data-difficulty="easy">Easy</button>
+        <button data-difficulty="medium">Medium</button>
+        <button data-difficulty="hard">Hard</button>
+      </div>
+
+      <!-- Dark Mode Toggle -->
+      <div class="theme-toggle">
+        <label>🌗 Dark Mode</label>
+        <input type="checkbox" id="darkToggle" />
+      </div>
+    </div>
+
+    <!-- Game Cards -->
+    <section id="card-section"></section>
+
+    <!-- Restart Button -->
+    <div class="controls">
+      <button id="restartBtn">🔁 Restart</button>
+    </div>
+
+    <!-- Win Modal -->
+    <div id="win-modal" class="modal hidden">
+      <div class="modal-content">
+        <h2>🎉 You Won!</h2>
+        <p>Time: <span id="final-time">00:00</span></p>
+        <p>Moves: <span id="final-moves">0</span></p>
+        <p>Rating: <span id="final-stars">⭐⭐⭐</span></p>
+        <button onclick="restartGame()">Play Again</button>
+      </div>
+    </div>
+
+    <script src="script.js" defer></script>
+  </body>
+</html
