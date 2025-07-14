@@ -1,12 +1,12 @@
 // FULL ADVANCED script.js FOR MEMORY GAME
 
 let cardsArray = [
-  { name: "apple", img: "images/apple.png" },
-  { name: "mango", img: "images/mango.png" },
-  { name: "watermelon", img: "images/watermelon.png" },
-  { name: "grapes", img: "images/grapes.png" },
-  { name: "pineapple", img: "images/pineapple.png" },
-  { name: "strawberry", img: "images/strawberry.png" },
+  { name: "apple", img: "apple.png" },
+  { name: "mango", img: "mango.png" },
+  { name: "watermelon", img: "watermelon.png" },
+  { name: "grapes", img: "grapes.png" },
+  { name: "pineapple", img: "pineapple.png" },
+  { name: "strawberry", img: "strawberry.png" },
 ];
 
 let firstCard = "";
@@ -26,9 +26,9 @@ const finalMoves = document.getElementById("final-moves");
 const finalStars = document.getElementById("final-stars");
 
 // --- Sound Effects ---
-const clickSound = new Audio("sounds/click.wav");
-const matchSound = new Audio("sounds/match.wav");
-const wrongSound = new Audio("sounds/wrong.wav");
+const clickSound = new Audio("click.wav");
+const matchSound = new Audio("match.wav");
+const wrongSound = new Audio("wrong.wav");
 
 function playSound(type) {
   if (type === "click") clickSound.play();
